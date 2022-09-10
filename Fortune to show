@@ -20,3 +20,4 @@ if fortune_number == 4:
 print (F'{fortune_text} Your Lucky number is : {the_luckynumber}')
 
 # The print is help as to see the result of the cod
+
