@@ -1,0 +1,21 @@
+import random
+# Whe gonna import a moduel for the python
+
+answer = random.randint(1, 7)
+
+if answer == 1:
+    print("Yes")
+if answer == 2:
+    print("No")
+if answer == 3:
+    print("Yes")
+if answer == 4:
+    print("Yes")
+if answer == 5:
+    print("Yes")
+if answer == 6:
+    print("Yes")
+if answer == 7:
+    print("No")
+    
+    
