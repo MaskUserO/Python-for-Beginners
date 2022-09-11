@@ -1,0 +1,22 @@
+text = """
+Ștefan cel Mare este considerat o personalitate marcantă a istoriei României, înzestrată cu mari calități de om de stat, diplomat și conducător militar. Aceste calități i-au permis să treacă cu bine peste momentele de criză majoră, generate fie de intervențiile militare ale statelor vecine fie de încercări, din interior sau sprijinite din exteriorul țării, de îndepărtare a sa de la domnie. În timpul domniei sale Moldova atinge apogeul dezvoltării sale statale, cunoscând o perioadă îndelungată de stabilitate internă, prosperitate economică și liniște socială.
+
+Pe plan intern și-a bazat regimul pe o nouă clasă conducătoare formată din oameni proveniți preponderent din mica boierime, ridicați la demnități pe baza meritelor militare, loialității față de domn sau a înrudirii apropiate cu acesta. De asemenea a sprijinit foarte mult dezvoltarea răzeșimii prin împroprietăriri colective ale obștilor de răzeși, în special în urma războaielor și bătăliilor purtate, fapt care i-a asigurat loialitatea acestei clase, liniștea socială în țară și forța umană pentru a avea o armată de masă -„oastea cea mare”.
+
+Pe plan extern a reușit să ducă o politică realistă având două mari linii directoare: impunerea sau susținerea unor conducători favorabili în țările vecine mici – Țara Românească și Hanatul Crimeii – și o politică de alianțe care să nu permită nici uneia din marile țări vecine – Imperiul Otoman, Regatul Poloniei și Regatul Ungariei să obțină o poziție hegemonică față de Moldova. A încercat, fără succes, realizarea unui sistem de alianțe internaționale împotriva turcilor, trimițând soli la Papa de la Roma, Veneția, Ungaria, Polonia, Cehia și Persia.
+
+În plan militar a urmărit două direcții majore de acțiune. Prima a fost crearea unui sistem de fortificații permanent la granițele țării - în timpul său construindu-se sau dezvoltându-se rețeaua de cetăți ce cuprindea cetățile de la Suceava, Neamț, Crăciuna, Chilia, Cetatea Albă, Tighina, Orhei, Lăpușna și Hotin. Cea de-a doua direcție majoră a fost crearea unei armate moderne cu o componentă permanentă, profesionistă și semiprofesionistă și o componentă de masă, formată din corpuri de răzeși înarmați, mobilizați în cazul marilor campanii militare.
+"""
+
+print(text.split())
+
+word_count = {}
+
+for word in text.lower().split():
+    if word in word_count:
+        word_count [word] = word_count[word] + 1
+    else:
+    
+     word_count[word] = 1
+
+print(word_count)
