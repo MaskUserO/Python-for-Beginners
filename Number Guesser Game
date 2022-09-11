@@ -1,0 +1,18 @@
+import random
+import time
+
+print ("Hii , Welcome to the guessing game . Please guess a number from 1 to 50")
+print ("Pricking a number ....")
+time.sleep(2)
+guess = int(input("What is your guess?:"))
+correct_number = random.randint(1, 50)
+guess_count = 1
+
+while guess != correct_number:
+    time.sleep(1)
+    guess_count += 1
+    if guess < correct_number:
+          guess = int(input("You guess wrong is to low .What is your guess?:"))
+    else:
+          guess = int (input("Wrong it's to big. you need to guess agian ?:"))
+print(F"The right answer was {correct_number} It took you { guess_count}")
